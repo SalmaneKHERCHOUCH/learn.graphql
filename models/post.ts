@@ -1,3 +1,4 @@
 export class Post {
-    id:number
+    id: number
+    
 }

@@ -2,38 +2,23 @@
   "name": "learn.graphql",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./dist/index.js",
-    "build": "tsc -p ./tsconfig.json",
-    "launch": "npm run build && npm run start",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "npm run build:dev",
-    "build:dev": "nodemon src/index.ts --exec 'npx ts-node' src/index.ts -e ts,graphql"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SalmaneKHERCHOUCH/learn.graphql.git"
   },
-  "author": "Salmane KHERCHOUCH",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SalmaneKHERCHOUCH/learn.graphql/issues"
   },
   "homepage": "https://github.com/SalmaneKHERCHOUCH/learn.graphql#readme",
   "dependencies": {
-    "@prisma/client": "^3.2.0",
-    "@types/uuid": "^8.3.1",
     "apollo-server": "^3.4.0",
-    "graphql": "^15.7.0",
-    "uuid": "^8.3.2"
-  },
-  "devDependencies": {
-    "@types/graphql": "^14.5.0",
-    "@types/node": "^16.10.3",
-    "nodemon": "^2.0.13",
-    "prisma": "^3.2.0",
-    "ts-node": "^10.2.1",
-    "typescript": "^4.4.3"
+    "graphql": "^15.7.0"
   }
 }

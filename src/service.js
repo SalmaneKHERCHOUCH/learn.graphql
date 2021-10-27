@@ -12,23 +12,25 @@ const typeDefs = gql `
 
     type Post {
         id: Int
-
+        title : String
+        content : String
+        author : String
     }
 
     type Query {
-        getPost();
+        getPost: [Post]
     }
 `
 const post = [
     {
-        title : "Premier",
-        id : 1,
+        id: 1,
+        content: "Premier message"
     },
     {
-        title : "Deuxieme",
-        id : 2,
+        id: 2,
+        content: "Deuxieme message"
     }
-];
+]
 
 const resolvers = {
     Query: {

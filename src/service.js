@@ -6,7 +6,7 @@ const typeDefs = gql `
         id: Int
         pseudo: String
         mail: String
-        age: Number
+        age: Int
         numero_portable: String
     }
 
@@ -15,9 +15,8 @@ const typeDefs = gql `
 
     }
 
-
-    type Mutation {
-
+    type Query {
+        getPost();
     }
 `
 const post = [
@@ -28,7 +27,7 @@ const post = [
     {
         title : "Deuxieme",
         id : 2,
-    },
+    }
 ];
 
 const resolvers = {
@@ -44,4 +43,4 @@ server.listen().then(({ url }) => {
   });
 
 
-;
+
